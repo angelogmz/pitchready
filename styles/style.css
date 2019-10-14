@@ -9,6 +9,10 @@ body a {
   color: #fff;
 }
 
+body a:hover {
+  color: #6fb544;
+}
+
 section {
   clear: both;
   float: left;
@@ -58,6 +62,10 @@ h2 {
     font-size: 3vw;
     margin-bottom: 3vw;
   }
+}
+
+h2.left-align {
+  text-align: left;
 }
 
 img {
@@ -300,6 +308,9 @@ section p {
 .sp-tagline {
   color: #6fb544;
   font-size: 2rem;
+  float: left;
+  width: 100%;
+  margin: 0.8rem 0;
 }
 
 @media only screen and (max-width: 991px) {
@@ -310,13 +321,15 @@ section p {
 
 @media only screen and (min-width: 992px) {
   .sp-tagline {
-    font-size: 2vw;
+    font-size: 1.6vw;
   }
 }
 
 .sec-2-logos {
   margin-top: 2rem;
   margin-bottom: 2rem;
+  float: left;
+  width: 100%;
 }
 
 .sec-2-logos a {
@@ -409,9 +422,210 @@ section p {
 
 .sec-3 {
   padding-top: 6rem;
+  padding-bottom: 6rem;
 }
 
 .sec-3 .sec-3-contwrap {
   padding-top: 5vw;
+}
+
+.sec-4 {
+  background: #06060b;
+  padding: 4rem 0;
+}
+
+.serv-boxes-parent {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-top: 4rem;
+}
+
+@media only screen and (min-width: 992px) {
+  .serv-boxes-parent {
+    margin-top: 4.6vw;
+  }
+}
+
+.serv-box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: stretch;
+      -ms-flex-align: stretch;
+          align-items: stretch;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 0;
+  background: #000;
+  color: #fff;
+  width: 100%;
+  position: relative;
+  margin-bottom: 30px;
+}
+
+@media only screen and (min-width: 992px) {
+  .serv-box {
+    width: 46%;
+    margin-bottom: 2vw;
+  }
+}
+
+.serv-box .serv-cont {
+  float: left;
+  padding: 15px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+@media only screen and (max-width: 991px) {
+  .serv-box .serv-cont {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    background: rgba(0, 0, 0, 0.8);
+  }
+}
+
+.serv-box .serv-cont .box-number {
+  font-size: 2.2rem;
+  margin-left: auto;
+  color: #a5a7bb;
+}
+
+@media only screen and (min-width: 992px) {
+  .serv-box .serv-cont .box-number {
+    font-size: 2.2vw;
+  }
+}
+
+.serv-box .serv-cont .txt-box {
+  width: 75%;
+  padding-left: 15px;
+  font-size: 1.3rem;
+}
+
+@media only screen and (min-width: 992px) {
+  .serv-box .serv-cont .txt-box {
+    font-size: 1.3vw;
+  }
+}
+
+.serv-box .serv-cont .l-more-link {
+  color: #6fb544;
+  margin-left: auto;
+}
+
+.serv-box .serv-cont .l-more-link:hover {
+  color: #8ad85b;
+  text-decoration: none;
+}
+
+footer {
+  clear: both;
+  float: left;
+  width: 100%;
+  background: #000;
+}
+
+footer .footer-top-wrap {
+  float: none;
+  padding: 4rem 0 2rem;
+  display: table;
+}
+
+footer .footer-left {
+  float: left;
+}
+
+footer .footer-right {
+  float: left;
+}
+
+footer .smo-links {
+  margin-bottom: 5rem;
+}
+
+footer .smo-links a {
+  color: #6fb544;
+  margin-right: 1.9rem;
+  font-size: 20px;
+}
+
+footer .smo-links a:hover {
+  color: #fff;
+}
+
+@media only screen and (min-width: 992px) {
+  footer .smo-links a {
+    font-size: 1.3vw;
+  }
+}
+
+footer .footer-address .add-col {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  clear: both;
+  float: left;
+  width: 100%;
+  font-size: 13px;
+}
+
+@media only screen and (min-width: 992px) {
+  footer .footer-address .add-col {
+    font-size: 0.85vw;
+  }
+}
+
+footer .footer-address .add-col i {
+  color: #6fb544;
+  margin-right: 1rem;
+}
+
+footer .footer-address .address-box {
+  float: left;
+  width: 100%;
+  margin-bottom: 2rem;
+}
+
+footer .footer-address .address-box .title-txt {
+  font-size: 18px;
+  font-weight: 700;
+  margin-bottom: 0.4rem;
+  clear: both;
+  float: left;
+  width: 100%;
+}
+
+@media only screen and (min-width: 992px) {
+  footer .footer-address .address-box .title-txt {
+    font-size: 1.2vw;
+  }
+}
+
+footer .footer-bottom {
+  clear: both;
+  float: left;
+  width: 100%;
+  background: #06060b;
+  padding: 2rem 0;
 }
 /*# sourceMappingURL=style.css.map */
