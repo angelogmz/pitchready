@@ -548,5 +548,9 @@ footer {
         border-radius: 50px;
         cursor: pointer;
         color: #6fb544;
+
+        &:hover{
+            background: rgba(255,255,255, 0.4);
+        }
     }
 }

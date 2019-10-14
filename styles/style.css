@@ -675,4 +675,8 @@ footer .scrl-top {
   cursor: pointer;
   color: #6fb544;
 }
+
+footer .scrl-top:hover {
+  background: rgba(255, 255, 255, 0.4);
+}
 /*# sourceMappingURL=style.css.map */
