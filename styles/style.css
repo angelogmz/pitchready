@@ -559,8 +559,28 @@ footer .footer-right {
   float: left;
 }
 
+@media only screen and (max-width: 991px) {
+  footer .footer-right {
+    padding-top: 4rem;
+  }
+}
+
 footer .smo-links {
   margin-bottom: 5rem;
+}
+
+@media only screen and (max-width: 991px) {
+  footer .smo-links {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
 }
 
 footer .smo-links a {
@@ -627,5 +647,32 @@ footer .footer-bottom {
   width: 100%;
   background: #06060b;
   padding: 2rem 0;
+}
+
+@media only screen and (max-width: 991px) {
+  footer .footer-bottom .copy-text {
+    text-align: center;
+    width: 100%;
+    float: left;
+  }
+}
+
+footer .scrl-top {
+  float: right;
+  width: 40px;
+  height: 40px;
+  border: 1px solid #6fb544;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-radius: 50px;
+  cursor: pointer;
+  color: #6fb544;
 }
 /*# sourceMappingURL=style.css.map */
