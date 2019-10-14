@@ -16,8 +16,48 @@ section {
   position: relative;
 }
 
+section ul {
+  list-style: none;
+  padding-left: 0;
+  margin-bottom: 2.4rem;
+}
+
+section ul li {
+  margin-bottom: 1.2rem;
+}
+
+@media only screen and (min-width: 992px) {
+  section ul li {
+    font-size: 1.25vw;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+}
+
+section ul i {
+  color: #6fb544;
+  margin-right: 1rem;
+}
+
+@media only screen and (min-width: 992px) {
+  section ul i {
+    font-size: 2vw;
+  }
+}
+
 h2 {
   text-align: center;
+}
+
+@media only screen and (min-width: 1024px) {
+  h2 {
+    font-size: 3vw;
+    margin-bottom: 3vw;
+  }
 }
 
 img {
@@ -181,9 +221,7 @@ header .login-btn:hover {
 
 .main-banner .main-banner-overlay .main-tagline {
   color: #6fb544;
-  font-size: 2.4vw;
   font-weight: 700;
-  width: 24vw;
 }
 
 @media only screen and (max-width: 991px) {
@@ -192,6 +230,14 @@ header .login-btn:hover {
     font-size: 22px;
     text-align: center;
     width: 70vw;
+  }
+}
+
+@media only screen and (min-width: 992px) {
+  .main-banner .main-banner-overlay .main-tagline {
+    line-height: 3vw;
+    width: 24vw;
+    font-size: 2.4vw;
   }
 }
 
@@ -204,12 +250,42 @@ header .login-btn:hover {
   .main-banner .main-banner-overlay .para-text {
     width: 70vw;
     text-align: center;
+    font-size: 0.9rem;
+    line-height: 1.2rem;
+  }
+}
+
+@media only screen and (min-width: 992px) {
+  .main-banner .main-banner-overlay .para-text {
+    font-size: 0.9vw;
+    line-height: 1.2vw;
   }
 }
 
 .main-banner .main-banner-overlay .btn {
   padding-left: 30px;
   padding-right: 30px;
+}
+
+section .btn {
+  padding-left: 30px;
+  padding-right: 30px;
+}
+
+section h3 {
+  color: #6fb544;
+  margin-bottom: 1.4rem;
+}
+
+@media only screen and (min-width: 992px) {
+  section h3 {
+    font-size: 2.3vw;
+    margin-bottom: 3vw;
+  }
+}
+
+section p {
+  line-height: 2rem;
 }
 
 .sec-2 {
@@ -223,6 +299,119 @@ header .login-btn:hover {
 
 .sp-tagline {
   color: #6fb544;
-  font-size: 2vw;
+  font-size: 2rem;
+}
+
+@media only screen and (max-width: 991px) {
+  .sp-tagline {
+    line-height: 2.2rem;
+  }
+}
+
+@media only screen and (min-width: 992px) {
+  .sp-tagline {
+    font-size: 2vw;
+  }
+}
+
+.sec-2-logos {
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+
+.sec-2-logos a {
+  margin-right: 15px;
+  margin-bottom: 15px;
+}
+
+.sec-2-sideimg {
+  position: relative;
+}
+
+@media only screen and (max-width: 991px) {
+  .sec-2-sideimg {
+    padding-top: 4rem;
+  }
+}
+
+.sec-2-sideimg .thumb-wrap {
+  width: 73%;
+  z-index: 1;
+  float: right;
+  position: relative;
+}
+
+@media only screen and (max-width: 991px) {
+  .sec-2-sideimg .thumb-wrap {
+    width: 100%;
+  }
+}
+
+.sec-2-sideimg .thumb-wrap .play-btn-wrap {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.sec-2-sideimg .thumb-wrap .play-btn {
+  padding: 0;
+  border: 1px solid #fff;
+  border-radius: 60px;
+  font-size: 48px;
+  width: 62px;
+  height: 62px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+@media only screen and (min-width: 992px) {
+  .sec-2-sideimg::after {
+    content: '';
+    height: 40%;
+    width: 70%;
+    position: absolute;
+    left: 8%;
+    top: 20%;
+    background: url("../images/sec-2-bg.png") center repeat;
+    z-index: -1;
+  }
+}
+
+.sec-2-sideimg a {
+  color: #fff;
+}
+
+.sec-2-sideimg a:hover {
+  color: #fff;
+}
+
+.sec-2-sideimg a:hover .play-btn {
+  background: rgba(255, 255, 255, 0.4);
+}
+
+.sec-3 {
+  padding-top: 6rem;
+}
+
+.sec-3 .sec-3-contwrap {
+  padding-top: 5vw;
 }
 /*# sourceMappingURL=style.css.map */
