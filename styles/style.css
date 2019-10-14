@@ -649,6 +649,10 @@ footer .footer-bottom {
   padding: 2rem 0;
 }
 
+footer .footer-bottom .copy-text {
+  font-size: 12px;
+}
+
 @media only screen and (max-width: 991px) {
   footer .footer-bottom .copy-text {
     text-align: center;
@@ -659,8 +663,8 @@ footer .footer-bottom {
 
 footer .scrl-top {
   float: right;
-  width: 40px;
-  height: 40px;
+  width: 35px;
+  height: 35px;
   border: 1px solid #6fb544;
   display: -webkit-box;
   display: -ms-flexbox;
