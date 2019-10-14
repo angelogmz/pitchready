@@ -492,7 +492,7 @@ section p {
           justify-content: space-between;
 }
 
-@media only screen and (max-width: 991px) {
+@media only screen and (max-width: 767px) {
   .serv-box .serv-cont {
     position: absolute;
     top: 0;
