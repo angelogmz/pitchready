@@ -326,8 +326,6 @@ section{
             justify-content: center;
             align-items: center;
         }
-
-
     }
 
     @media only screen and (min-width: 992px) {
@@ -338,7 +336,7 @@ section{
             position: absolute;
             left: 8%;
             top: 20%;
-            background: url('../images/sec-2-bg.png') center repeat ;
+            background: url('../images/sec-2-bg.png') 0 0 repeat ;
             z-index: -1;
         }
     }

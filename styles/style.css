@@ -409,7 +409,7 @@ section p {
     position: absolute;
     left: 8%;
     top: 20%;
-    background: url("../images/sec-2-bg.png") center repeat;
+    background: url("../images/sec-2-bg.png") 0 0 repeat;
     z-index: -1;
   }
 }
