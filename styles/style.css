@@ -55,7 +55,12 @@ section ul i {
 
 h2 {
   text-align: center;
-  margin-bottom: 2rem;
+}
+
+@media only screen and (max-width: 991px) {
+  h2.has-mob-bottom-margin {
+    margin-bottom: 2rem;
+  }
 }
 
 @media only screen and (min-width: 1024px) {
