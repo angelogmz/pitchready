@@ -55,6 +55,7 @@ section ul i {
 
 h2 {
   text-align: center;
+  margin-bottom: 2rem;
 }
 
 @media only screen and (min-width: 1024px) {
@@ -427,6 +428,12 @@ section p {
 
 .sec-3 .sec-3-contwrap {
   padding-top: 5vw;
+}
+
+@media only screen and (max-width: 991px) {
+  .sec-3 .sec-3-contwrap .text-md-left {
+    margin-bottom: 3rem;
+  }
 }
 
 .sec-4 {
