@@ -31,17 +31,14 @@ section {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
 }
 
 @media only screen and (min-width: 992px) {
   .main-banner ul li, section ul li {
     font-size: 1.25vw;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
   }
 }
 
@@ -187,7 +184,7 @@ header .login-btn:hover {
   position: relative;
 }
 
-.main-banner::after {
+.main-banner:not(.inner-page)::after {
   content: '';
   height: 2px;
   width: 100%;
@@ -822,5 +819,56 @@ footer .scrl-top:hover {
   .gal-img .gal-thumbs-right {
     text-align: center;
   }
+}
+
+.overlay-with-bg {
+  position: relative;
+}
+
+.overlay-with-bg .text-overlay {
+  position: absolute;
+  width: 100%;
+  top: 0;
+  left: 0;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: stretch;
+      -ms-flex-align: stretch;
+          align-items: stretch;
+}
+
+.overlay-with-bg .para-text {
+  width: 40vw;
+  margin: 2rem 0;
+}
+
+.overlay-with-bg .para-text h3, .overlay-with-bg .para-text h4 {
+  font-weight: 700;
+}
+
+@media only screen and (max-width: 991px) {
+  .overlay-with-bg .para-text {
+    width: 100%;
+    text-align: left;
+    font-size: 15px;
+    line-height: 1.2rem;
+  }
+  .overlay-with-bg .para-text i {
+    font-size: 20px;
+  }
+}
+
+@media only screen and (min-width: 992px) {
+  .overlay-with-bg .para-text p {
+    line-height: 1.7;
+    margin-bottom: 1rem;
+    font-size: 0.95vw;
+  }
+}
+
+.overlay-with-bg .custom-text {
+  color: #717381;
 }
 /*# sourceMappingURL=style.css.map */

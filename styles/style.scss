@@ -37,11 +37,10 @@ section{
         li{
             margin-bottom: 1.2rem;
             display: flex;
+            align-items: flex-start;
 
             @media only screen and (min-width: 992px) {
                 font-size: 1.25vw;
-                display: flex;
-                align-items: center;
             }
         }
         i{
@@ -170,15 +169,18 @@ header{
 	width: 100%;
     position: relative;
 
-    &::after{
-        content:'';
-        height: 2px;
-        width: 100%;
-        float: left;
-        clear: both;
-        background: rgb(111,181,68);
-        background: linear-gradient(90deg, rgba(111,181,68,1) 0%, rgba(111,181,68,1) 16%, rgba(250,250,250,1) 100%); 
+    &:not(.inner-page){
+        &::after{
+            content:'';
+            height: 2px;
+            width: 100%;
+            float: left;
+            clear: both;
+            background: rgb(111,181,68);
+            background: linear-gradient(90deg, rgba(111,181,68,1) 0%, rgba(111,181,68,1) 16%, rgba(250,250,250,1) 100%); 
+        }        
     }
+
     
     .main-banner-overlay {
         position: absolute;
@@ -708,3 +710,53 @@ footer {
     }
 
 }
+
+.overlay-with-bg{
+    position: relative;
+
+    .text-overlay{
+        position: absolute;
+        width: 100%;
+        top: 0;
+        left: 0;
+        height: 100%;
+        display: flex;
+        align-items: stretch;        
+    }
+
+    .para-text{
+        width: 40vw;
+        margin: 2rem 0;
+
+        
+        h3,h4{
+            font-weight: 700;
+        }
+
+        @media only screen and (max-width: 991px) {
+            width: 100%;
+            text-align: left;
+            font-size: 15px;
+            line-height: 1.2rem;
+
+            i{
+                font-size: 20px;
+            }
+        }
+
+        @media only screen and (min-width: 992px) {
+            p{
+                line-height: 1.7;
+                margin-bottom: 1rem;
+                font-size: 0.95vw;
+                
+            }
+        }
+    } 
+    
+    .custom-text{
+        color: #717381;
+    }
+}
+
+
