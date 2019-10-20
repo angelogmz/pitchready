@@ -20,18 +20,21 @@ section {
   position: relative;
 }
 
-section ul {
+.main-banner ul, section ul {
   list-style: none;
   padding-left: 0;
   margin-bottom: 2.4rem;
 }
 
-section ul li {
+.main-banner ul li, section ul li {
   margin-bottom: 1.2rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 
 @media only screen and (min-width: 992px) {
-  section ul li {
+  .main-banner ul li, section ul li {
     font-size: 1.25vw;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -42,13 +45,13 @@ section ul li {
   }
 }
 
-section ul i {
+.main-banner ul i, section ul i {
   color: #6fb544;
   margin-right: 1rem;
 }
 
 @media only screen and (min-width: 992px) {
-  section ul i {
+  .main-banner ul i, section ul i {
     font-size: 2vw;
   }
 }
@@ -272,7 +275,10 @@ header .login-btn:hover {
 @media only screen and (min-width: 992px) {
   .main-banner .main-banner-overlay .para-text {
     font-size: 0.9vw;
-    line-height: 1.2vw;
+  }
+  .main-banner .main-banner-overlay .para-text p {
+    line-height: 2.4;
+    margin-bottom: 5rem;
   }
 }
 
@@ -694,5 +700,127 @@ footer .scrl-top {
 
 footer .scrl-top:hover {
   background: rgba(255, 255, 255, 0.4);
+}
+
+.gal-thumbs {
+  padding-top: 3rem;
+  padding-bottom: 5rem;
+}
+
+@media only screen and (min-width: 992px) {
+  .gal-thumbs {
+    padding-top: 10vw;
+    padding-bottom: 10vw;
+  }
+}
+
+.gal-thumbs .gal-thumbs-left {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: relative;
+}
+
+@media only screen and (max-width: 991px) {
+  .gal-thumbs .gal-thumbs-left {
+    margin-bottom: 3rem;
+  }
+}
+
+@media only screen and (min-width: 992px) {
+  .gal-thumbs .gal-thumbs-left {
+    padding-right: 8%;
+  }
+  .gal-thumbs .gal-thumbs-left::after {
+    content: '';
+    height: 33.33%;
+    width: 70%;
+    position: absolute;
+    left: 25%;
+    top: 33.33%;
+    background: url("../images/sec-2-bg.png") 0 0 repeat;
+    z-index: -1;
+  }
+}
+
+.gal-thumbs .gal-thumbs-left .gal-thumb-item {
+  margin-top: 30px;
+}
+
+@media only screen and (min-width: 992px) {
+  .gal-thumbs .gal-thumbs-left .gal-thumb-item {
+    width: calc(50% - 15px);
+  }
+  .gal-thumbs .gal-thumbs-left .gal-thumb-item:nth-child(-n+2) {
+    margin-top: 0;
+  }
+}
+
+@media only screen and (max-width: 991px) {
+  .gal-thumbs .gal-thumbs-right {
+    text-align: center;
+  }
+}
+
+.text-content-wide {
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+  float: left;
+  width: 100%;
+}
+
+.gal-img {
+  padding-top: 3rem;
+  padding-bottom: 5rem;
+}
+
+@media only screen and (min-width: 992px) {
+  .gal-img {
+    padding-top: 10vw;
+    padding-bottom: 10vw;
+  }
+}
+
+@media only screen and (max-width: 991px) {
+  .gal-img .gal-img-left {
+    margin-bottom: 3rem;
+  }
+}
+
+@media only screen and (min-width: 992px) {
+  .gal-img .gal-img-left {
+    padding-right: 8%;
+  }
+  .gal-img .gal-img-left::after {
+    content: '';
+    height: 33.33%;
+    width: 70%;
+    position: absolute;
+    left: 25%;
+    bottom: 0;
+    background: url("../images/sec-2-bg.png") 0 0 repeat;
+    z-index: -1;
+  }
+}
+
+.gal-img .gal-img-left .gal-img-item {
+  overflow: hidden;
+  border: none;
+  border-radius: 10px;
+  margin-bottom: 3rem;
+}
+
+@media only screen and (max-width: 991px) {
+  .gal-img .gal-thumbs-right {
+    text-align: center;
+  }
 }
 /*# sourceMappingURL=style.css.map */
